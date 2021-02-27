@@ -26,7 +26,7 @@ public class StoreFile {
             file.transferTo(dest);
             return "上传成功";
         } catch (IOException e) {
-            System.err.println(e);
+            System.err.println(e.getMessage());
         }
         return "上传失败！";
     }
